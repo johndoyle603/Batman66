@@ -1,0 +1,16 @@
+  
+.navbar{
+    background-color: skyblue;
+}
+.label{
+    color:darkblue;
+    text-align: center;
+}
+img {
+    width:  125px;
+    height: 125px;
+}
+#logosize{
+    width:  250px;
+    height: 125px;
+}
