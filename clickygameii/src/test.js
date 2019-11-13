@@ -4,7 +4,12 @@ import Grid from "./Grid"
 import characters from "./characters.js"
 import './App.css';
 import { shuffle } from './shuffleArray';
-import PictureCard from "./PictureCard";
+
+
+import PictureCard from "./components/PictureCard";
+import Wrapper from "./components/Wrapper";
+import { PictureInterface } from './interfaces/PictureCard';
+import { shuffle } from './shuffleArray';
 
 //  Individual component for ; 
 
@@ -67,18 +72,18 @@ class App extends Component {
   render() {
     return (
       <>
-      <Navigation score={this.state.score} topScore={this.state.topScore} />
-      <div className="container">
+      <Navbar score={this.state.score} topScore={this.state.topScore} />
+      <Wrapper>
         <p className="col-12 mx-auto">Click all nine pictures without repeating yourself</p>
         {this.state.characters.map(character => (
           <PictureCard
             shufflePictures={this.shufflePictures}
             id={character.id}
             name={character.name}
-            image={character.img}
+            image={character.image}
           />
         ))}
-      </div>
+      </Wrapper>
       </>
     );
   }
