@@ -1,14 +1,14 @@
   
 .navbar{
     background-color: skyblue;
+    font-family: 'Bangers', cursive;
+    font-size: 21px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .label{
     color:darkblue;
     text-align: center;
-}
-img {
-    width:  125px;
-    height: 125px;
 }
 #logosize{
     width:  250px;

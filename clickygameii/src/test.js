@@ -4,8 +4,6 @@ import Grid from "./Grid"
 import characters from "./characters.js"
 import './App.css';
 import { shuffle } from './shuffleArray';
-
-
 import PictureCard from "./components/PictureCard";
 import Wrapper from "./components/Wrapper";
 import { PictureInterface } from './interfaces/PictureCard';
@@ -25,7 +23,7 @@ class App extends Component {
 
   
   restart = () => {
-    alert("game over");
+    alert("Confound it!");
     this.setState({
         characters,
       previousIDs: [0],
@@ -43,7 +41,7 @@ class App extends Component {
     const newTopScore = newScore > this.state.topScore ? newScore : this.state.topScore;
 
     if (newScore > 8) {
-      alert("congrats you won.");
+      alert("Holy Bat Logic! You win!");
       this.restart();
     }
 

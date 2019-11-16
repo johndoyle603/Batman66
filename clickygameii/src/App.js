@@ -62,26 +62,18 @@ class App extends Component {
     };
   };
 
-
-  // Map over this.state.pictures and render a pictureCard component for each friend object
   render() {
     return (
       <>
       <Navigation score={this.state.score} topScore={this.state.topScore} />
       <div className="container">
-        <p className="col-12 mx-auto">Click all nine pictures without repeating yourself</p>
-        {this.state.characters.map(character => (
-          <PictureCard
-            shufflePictures={this.shufflePictures}
-            id={character.id}
-            name={character.name}
-            image={character.img}
-          />
-        ))}
+      <Grid shufflePictures={this.shufflePictures}
+      />
       </div>
       </>
     );
   }
 }
+
 
 export default App;
