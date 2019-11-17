@@ -6,9 +6,10 @@
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
+    padding: 77px;
 }
 
 .card:hover{
-  border: 5px solid green;
+  border: 5px solid gold;
 }
 

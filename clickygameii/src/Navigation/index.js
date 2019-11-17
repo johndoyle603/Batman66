@@ -19,8 +19,8 @@ function Navigation(props) {
         <div className="label">
           <h2>Top score:  {props.topScore} </h2>
         </div>
-        <div className="label">
-          <h2>Click all 12 characters without repeating yourself</h2>
+        <div className="babel">
+          <h2><center>Click all 12 characters without repeating yourself!</center></h2>
         </div>
 
       </div>
