@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from "./Navigation";
 import Grid from "./Grid"
-import characters from "./characters.js"
+import characters from "./characters.js.js"
 import './App.css';
 import { shuffle } from './shuffleArray';
 import PictureCard from "./components/PictureCard";
