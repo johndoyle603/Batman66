@@ -9,11 +9,6 @@ function PictureCard(props) {
 
   return (
     <div style={pictureStyle} onClick ={() => props.shufflePictures(props.id)} className="col-3 card"></div>
-    // <div style={pictureStyle} onClick ={() => props.shuffleFriends(props.id)} className="card">
-    //   <div className="img-container">
-    //     <img alt={props.name} src={props.image} />
-    //   </div>
-    // </div>
   );
 }
 
