@@ -5,7 +5,7 @@ function Navigation(props) {
   return (
 
     <div>
-      <div className="navbar">
+      <div className="myNavbar">
       <div className="label">
           <img src="./images/logo.png" id="logosize">
           </img>
